@@ -29,7 +29,7 @@ public class IngredientController {
         return ingredientService.findAll();
     }
 
-    @PostMapping
+    @PostMapping("/ingredient/new")
     public List<Ingredient> addNewIngredient(@RequestBody Ingredient ingredient) {
         ingredientService.addIngredient(ingredient);
         return ingredientService.findAll();
